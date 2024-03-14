@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- mobile meta -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- Author -->
+    <meta name="author" content="Miracle" />
+    <!-- Description of website -->
+    <meta name="description" content="real estate website" />
+    <!-- keywords that best describes your website  -->
+    <meta name="keywords" content="rent house, selling of properties" />
+    <title>MY-Website | Contact page</title>
+    <!-- design-system.css -->
+    <link rel="stylesheet" href="./src/css/design-system.css" />
+    <!-- contact -->
+    <link rel="stylesheet" href="src/css/contact.css" />
+    <!-- Link to logo -->
+    <link rel="icon" href="./src/image/hero.svg" />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header starts -->
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">
+          <img src="src/image/hero.svg" alt="logo" />
+        </a>
+        <div class="links" id="links">
+          <a href="login.html">Login</a>
+          <a href="#pricing-section">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div class="hambuger" id="hambuger">
+          <i class="bi bi-list"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Header ends -->
+
+    <!-- Contact Section Start -->
+    <section id="contact-section">
+      <div class="contact-section-content container grid">
+        <div class="contact-section-content--left flex">
+          <h2>Contact Us</h2>
+          <form action="/server-file" method="post">
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+
+            <input
+              type="number"
+              name="phone"
+              placeholder="Enter Your Phone Number"
+              required
+            />
+
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+
+            <button>Send Message</button>
+          </form>
+        </div>
+
+        <!-- map -->
+        <div class="contact-section-content--right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15886.119612257313!2d6.0079891!3d5.4880134!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041bd7e2bde7441%3A0x486a6bc7e8c200fc!2sCrunchies%20Plus%20Concept!5e0!3m2!1sen!2sng!4v1708603221598!5m2!1sen!2sng"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Section starts -->
+    <footer id="footer-section">
+      <div class="footer-section-content container grid">
+        <!-- left side -->
+        <div class="footer-content--left">
+          <div class="footer-content--left-links">
+            <div>
+              <i class="bi bi-chevron-right"></i>
+              <a href="index.html">Home</a>
+            </div>
+
+            <div>
+              <i class="bi bi-chevron-right"></i>
+              <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+              <i class="bi bi-chevron-right"></i>
+              <a href="#pricing-section">Pricing</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- right side -->
+        <div class="footer-content--right">
+          <div>Follow Us</div>
+          <div class="social-links">
+            <a href="http://www.facebook.com/"
+              ><i class="bi bi-facebook"></i
+            ></a>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+          </div>
+          <div>Copyrite &copy; 2020 All rights Reservered</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section ends -->
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
